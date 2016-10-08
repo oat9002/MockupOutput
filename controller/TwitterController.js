@@ -4,9 +4,9 @@ import * as TwitterService from '../service/TwitterService'
 
 let twitterRouter = express.Router()
 
-twitterRouter.route('/output').get((req, res) => {
+twitterRouter.route('/all').get((req, res) => {
   TwitterService.mockupOutput().then(output => {
-    res.send(output)
+    res.send({sentiments: output})
   })
 })
 

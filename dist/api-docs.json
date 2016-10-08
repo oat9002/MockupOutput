@@ -22,7 +22,7 @@
     "application/json"
   ],
   "paths": {
-    "/output": {
+    "/all": {
       "get":{
         "tags": [ "Twitter"],
         "description": "This is random output data",
