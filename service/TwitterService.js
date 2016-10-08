@@ -1,7 +1,7 @@
 export function mockupOutput() {
   let output = {}
   let max = 100
-  for (var i = 0; i < 5; i++) {
+  for (let i = 0; i < 5; i++) {
     switch (i) {
       case 0:
         output.happy = Math.floor(Math.random() * (max + 1))
