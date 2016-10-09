@@ -2,7 +2,8 @@ export function getCurrentDensity(location) {
   let place = {}
   let output = []
   let dens
-  place.Geolocation = "13.734760,100.777690"
+  place.latitude = 13.734760
+  place.logitude = 100.777690
   place.Name = "KMITL"
   dens = Math.floor(Math.random() * (3))
   if(dens == 0)  
@@ -24,8 +25,8 @@ export function getChaningDensity(location){
   let place = {}
   let output = []
   let dens
-
-  place.Geolocation = "13.734760,100.777690"
+  place.latitude = 13.734760
+  place.logitude = 100.777690
   place.Name = "KMITL"
   dens = Math.floor(Math.random() * (3))
   if(dens == 0)  
@@ -47,19 +48,23 @@ export function getNextPlace(location){
   let place = {}
   let output = []
 
-  place.Geolocation = "13.734760,100.777690"
+  place.latitude = 13.734760
+  place.logitude = 100.777690
   place.Name = "KMITL"
   place.NextPlace = [
     { Order : 1,
-      Geolocation : "13.693811,100.648180",
+      latitude : 13.693811,
+      logitude : 100.648180,
       Name : "ซีคอนสแควร์"
     },
     { Order : 2,
-      Geolocation : "13.694754,100.650628",
+      latitude : 13.694754,
+      logitude : 100.650628,
       Name : "ตลาดรถไฟ ศรีนครินทร์"
     },
     { Order : 3,
-      Geolocation : "13.689999,100.750134",
+      latitude : 13.689999,
+      logitude : 100.750134,
       Name : "ท่าอากาศยานสุวรรณภูมิ"
     }
   ]
