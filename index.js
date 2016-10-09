@@ -2,6 +2,7 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import twitterRouter from './controller/TwitterController'
+import crowdFlowRouter from './controller/CrowdFlowController'
 import cors from 'cors'
 import swagger from 'swagger-node-express'
 import { applicationUrl, swaggerPath } from './swagger'
@@ -25,6 +26,8 @@ app.route('/').get((req, res) => {
 })
 
 app.use('/twitter', twitterRouter)
+
+app.use('/crowdFlow', crowdFlowRouter)
 
 //Swagger
 app.use('/swagger', swaggerPath)
