@@ -8,8 +8,8 @@
   "basePath": "/",
   "tags" : [
     {
-      "name": "Twitter",
-      "description": "Mockup output for Twitter"
+      "name": "Mock up",
+      "description": "Mockup output"
     }
   ],
   "schemes": [
@@ -26,6 +26,51 @@
       "get":{
         "tags": [ "Twitter"],
         "description": "This is random output data",
+        "operationId": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "response"
+          }
+        }
+      }
+    },
+     "/crowdFlow/current/density": {
+      "get":{
+        "tags": [ "Current Density level"],
+        "description": "current density level of the place",
+        "operationId": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "response"
+          }
+        }
+      }
+    },
+    "/crowdFlow/predict/changingDensity": {
+      "get":{
+        "tags": [ "Changing of the Density"],
+        "description": "changing of the density level of the place",
+        "operationId": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "response"
+          }
+        }
+      }
+    },
+    "/crowdFlow/predict/nextPlace": {
+      "get":{
+        "tags": [ "Next place going"],
+        "description": "Next top 3 place people from the current place will going",
         "operationId": "",
         "produces": [
           "application/json"
