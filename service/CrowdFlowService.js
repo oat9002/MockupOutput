@@ -5,15 +5,15 @@ export function getCurrentDensity(location) {
   place.Geolocation = "13.734760,100.777690"
   place.Name = "KMITL"
   dens = Math.floor(Math.random() * (3))
-  if(dens == 0)  
+  if(dens == 0)
     place.Density = "LOW"
-  else if(dens == 1)  
+  else if(dens == 1)
     place.Density = "MEDIUM"
   else
     place.Density = "HIGH"
 
   output[0]=place
-  
+
   return new Promise((resolve, reject) => {
     resolve(output)
   })
@@ -28,15 +28,15 @@ export function getChaningDensity(location){
   place.Geolocation = "13.734760,100.777690"
   place.Name = "KMITL"
   dens = Math.floor(Math.random() * (3))
-  if(dens == 0)  
+  if(dens == 0)
     place.Density = "DECREASE"
-  else if(dens == 1)  
+  else if(dens == 1)
     place.Density = "STABLE"
   else
     place.Density = "INCREASE"
 
   output[0]=place
-  
+
   return new Promise((resolve, reject) => {
     resolve(output)
   })
@@ -63,9 +63,9 @@ export function getNextPlace(location){
       Name : "ท่าอากาศยานสุวรรณภูมิ"
     }
   ]
-  
+
   output[0]=place
-  
+
   return new Promise((resolve, reject) => {
     resolve(output)
   })

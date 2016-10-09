@@ -8,8 +8,8 @@
   "basePath": "/",
   "tags" : [
     {
-      "name": "Mock up",
-      "description": "Mockup output"
+      "name": "Sentiment",
+      "description": "Sentiment's mockup output"
     }
   ],
   "schemes": [
@@ -22,9 +22,9 @@
     "application/json"
   ],
   "paths": {
-    "/twitter/all": {
+    "/sentiment/all": {
       "get":{
-        "tags": [ "Twitter"],
+        "tags": [ "Sentiment"],
         "description": "This is random output data",
         "operationId": "",
         "produces": [
@@ -148,5 +148,5 @@
       }
     }
   }
-  
+
 }

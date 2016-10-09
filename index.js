@@ -1,7 +1,7 @@
 "use strict"
 import express from 'express'
 import bodyParser from 'body-parser'
-import twitterRouter from './controller/TwitterController'
+import sentimentRouter from './controller/SentimentController'
 import crowdFlowRouter from './controller/CrowdFlowController'
 import cors from 'cors'
 import swagger from 'swagger-node-express'
@@ -22,10 +22,10 @@ app.use(bodyParser.urlencoded({
 
 //parent url
 app.route('/').get((req, res) => {
-  res.send('<h1>oOutput(Mockup)</h1>')
+  res.send('<h1>Output(Mockup)</h1>')
 })
 
-app.use('/twitter', twitterRouter)
+app.use('/sentiment', sentimentRouter)
 
 app.use('/crowdFlow', crowdFlowRouter)
 
