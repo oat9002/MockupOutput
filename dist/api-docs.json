@@ -5,7 +5,7 @@
     "title": "Mockup Output",
     "description": "All things you can use in this API"
   },
-  "basePath": "/twitter",
+  "basePath": "/",
   "tags" : [
     {
       "name": "Twitter",
@@ -22,7 +22,7 @@
     "application/json"
   ],
   "paths": {
-    "/all": {
+    "/twitter/all": {
       "get":{
         "tags": [ "Twitter"],
         "description": "This is random output data",
