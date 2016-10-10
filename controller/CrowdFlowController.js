@@ -6,19 +6,19 @@ let crowdFlowRouter = express.Router()
 
 crowdFlowRouter.route('/current/density').get((req, res) => {
   crowdFlowService.getCurrentDensity(req.location).then(output => {
-    res.send(output)
+    res.send({crowdflow: output})
   })
 })
 
 crowdFlowRouter.route('/predict/changingDensity').get((req, res) => {
   crowdFlowService.getChaningDensity(req.location).then(output => {
-    res.send(output)
+    res.send({crowdflow: output})
   })  
 })
 
 crowdFlowRouter.route('/predict/nextPlace').get((req, res) => {
   crowdFlowService.getNextPlace(req.location).then(output => {
-    res.send(output)
+    res.send({crowdflow: output})
   }) 
 })
 

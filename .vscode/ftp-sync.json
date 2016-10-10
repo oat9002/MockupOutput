@@ -1,0 +1,16 @@
+{
+    "remotePath": "/usr/local/nodejs/MockupOutput",
+    "host": "203.151.85.73",
+    "username": "sakonwan",
+    "password": "",
+    "port": 22,
+    "protocol": "sftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": "D:/KMITL/Senior/Project1/private.ppk",
+    "ignore": [
+        "\\.vscode",
+        "\\.git"
+    ]
+}
