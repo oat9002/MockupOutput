@@ -13,15 +13,15 @@ export function mockupOutput() {
 function randomSentiments(place) {
   let output = {}
   let max = 100
-  output.happy = Math.floor(Math.random() * (max + 1))
-  max = max - output.happy
+  output.joy = Math.floor(Math.random() * (max + 1))
+  max = max - output.joy
   output.sad = Math.floor(Math.random() * (max + 1))
   max = max - output.sad
   output.fear = Math.floor(Math.random() * (max + 1))
   max = max - output.fear
   output.angry = Math.floor(Math.random() * (max + 1))
   max = max - output.angry
-  output.neutral = max
+  output.serenity = max
   switch (place) {
     case 0: //KMITL
       output.latitude = 13.734760

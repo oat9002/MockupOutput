@@ -13,13 +13,13 @@ crowdFlowRouter.route('/current/density').get((req, res) => {
 crowdFlowRouter.route('/predict/changingDensity').get((req, res) => {
   crowdFlowService.getChaningDensity(req.location).then(output => {
     res.send({crowdflow: output})
-  })  
+  })
 })
 
 crowdFlowRouter.route('/predict/nextPlace').get((req, res) => {
   crowdFlowService.getNextPlace(req.location).then(output => {
     res.send({crowdflow: output})
-  }) 
+  })
 })
 
 export default crowdFlowRouter
